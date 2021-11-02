@@ -58,6 +58,12 @@ ul, ol {
     line-height: 1.1;
 }
 
+.section__title {
+    margin: 50px 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
 /* Header */
 
 .header {
@@ -65,7 +71,7 @@ ul, ol {
     border-bottom: 1px solid #000;
 }
 
-.header__inner {
+.header__item {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -196,41 +202,33 @@ ul, ol {
     transform: rotate(-45deg);
 }
 
-/* Catalog */
+/* product */
 
-.catalog__title {
-    margin: 50px 0;
-    text-align: center;
-    text-transform: uppercase;
-}
-
-.catalog__text {
+.product__text {
     margin: 0 auto 100px;
     max-width: 500px;
     width: 100%;
     text-align: center;
 }
 
-.catalog__text p {
+.product__text p {
     margin-bottom: 20px;
     line-height: 1.4;
 }
 
-.catalog {
-    padding-bottom: 200px;
-    background: url("../img/catalog-bg.jpg");
+.product {
     height: 100%;
     width: 100%;
     position: relative;
 }
 
-.catalog__deserts {
+.product__toys {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
 
-.catalog__inner {
+.product__inner {
     width: 300px;
     margin-bottom: 30px;
     padding: 10px;
@@ -239,20 +237,20 @@ ul, ol {
     transition: all .4s linear;
 }
 
-.catalog__inner:hover .catalog__inner--img {
+.product__inner:hover .product__inner--img {
     transform: rotate(7deg) scale(1.1, 1.1);
 }
 
-.catalog__inner:hover {
+.product__inner:hover {
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.22);
 }
 
-.catalog__inner--img {
+.product__inner--img {
     text-align: center;
     transition: all .9s ease-out;
 }
 
-.catalog__inner--text {
+.product__inner--text {
     text-align: center;
     margin-top: -5px;
 }
@@ -350,6 +348,10 @@ ul, ol {
     }
 }
 @media (max-width: 767px) {
+    .header__item p {
+        display: none;
+}
+
 	/* Nav */
 	.nav {
 		flex-direction: column;
@@ -392,21 +394,7 @@ ul, ol {
 		display: block;
 	}
 
-    .main__title {
-        margin-top: -100px;
-        text-align: center;
-    }
-
-    .contacts__title {
-        padding-top: 140px;
-    }
-
 }
 
-    @media (max-width: 320px) {
-        .header__inner p {
-            display: none;
-    }
-}
 
 
